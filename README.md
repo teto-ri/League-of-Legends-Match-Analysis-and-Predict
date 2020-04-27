@@ -20,19 +20,27 @@ A project to collect league-of-legend game records to analyze the factors that a
 
 ## 프로젝트 구성
 
-### 1. DATA ETL(Extract, Transform, Load) 2019.07.02 - 2019.08.23
+### 1. DATA ETL(Extract, Transform, Load) 
+
+> 2019.07.02 - 2019.08.23
 
 RIOT에서 제공하는 API를 이용해 데이터를 수집하고 가공하고, 파일화하여 저장한다.
 
-### 2. Match Data EDA(Exploratory Data Analysis) 2019.08.23 - 2019.09.01
+### 2. Match Data EDA(Exploratory Data Analysis) 
+
+> 2019.08.23 - 2019.09.01
 
 모은 데이터를 분석에 용이하도록 전처리하고, 승패에 영향이 가는 변수를 분석한다.
 
-### 3. Winner / Loser predict Model Build 2019.09.01 - 2019.09.10
+### 3. Winner / Loser predict Model Build 
+
+> 2019.09.01 - 2019.09.10
 
 승패 예측을 진행할 모델을 구축하고 튜닝을 통해 예측의 정확도를 올려 신뢰성 있는 모델을 만든다.
 
-### 4.Project Result 2019.09.12 - 2019.11.12( 랭크 게임 종료시까지 )
+### 4.Project Result 
+
+> 2019.09.12 - 2019.11.12( 랭크 게임 종료시까지 )
 
 모델의 feature_importance 를 확인과, 해당 지표가 실제로 승률에 영향을 미치는가 확인.
 이후 이 지표를 중심으로 게임을 한다.
