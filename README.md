@@ -22,7 +22,7 @@ A project to collect league-of-legend game records to analyze the factors that a
 
 ### 1. DATA ETL(Extract, Transform, Load) 
 
-> 2019.07.02 - 2019.08.23
+> 2019.07.02 - 2019.08.23 (2020.03.20)데이터 갱신
 
 RIOT에서 제공하는 API를 이용해 데이터를 수집하고 가공하고, 파일화하여 저장한다.
 
