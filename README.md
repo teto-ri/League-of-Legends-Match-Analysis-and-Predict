@@ -20,6 +20,8 @@ A project to collect league-of-legend game records to analyze the factors that a
 
 ## 프로젝트 구성
 
+모든 프로젝트는 Jupyter notebook으로 진행되어 실행결과가 표시되어 있음
+
 ### 1. DATA ETL(Extract, Transform, Load) 
 
 > 2019.07.02 - 2019.08.23
