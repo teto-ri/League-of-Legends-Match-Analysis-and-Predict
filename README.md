@@ -22,13 +22,13 @@ A project to collect league-of-legend game records to analyze the factors that a
 
 ### 1. DATA ETL(Extract, Transform, Load) 
 
-> 2019.07.02 - 2019.08.23 (2020.03.20)데이터 업데이트
+> 2019.07.02 - 2019.08.23
 
 RIOT에서 제공하는 API를 이용해 데이터를 수집하고 가공하고, 파일화하여 저장한다.
 
 ### 2. Match Data EDA(Exploratory Data Analysis) 
 
-> 2019.08.24 - 2019.08.25 (2020.04.10)코드 업데이트
+> 2019.08.24 - 2019.08.25
 
 모은 데이터를 분석에 용이하도록 전처리하고, 승패에 영향이 가는 변수를 분석한다.
 
@@ -46,6 +46,20 @@ EDA를 통해 얻은 정보로 특성 공학을 진행하고,
 
 회귀 분석과 특성 중요도 시각화로 모델을 분석하고, 해당 지표가 실제로 승률에 영향을 미치는가 확인.
 이후 이 지표를 중심으로 게임을 한다.
+
+## 업데이트 내역
+
+* (2020.03.20)
+  
+  DATA ETL 데이터 업데이트
+
+* (2020.04.10)
+  
+  DATA EDA코드 업데이트
+
+* (2020.04.28)
+
+  Repository 재생성, 정리
 
 ## ALL DATA SET LINK
 
