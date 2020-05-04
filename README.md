@@ -4,7 +4,7 @@
 
 A project to collect league-of-legend game records to analyze the factors that affect victory and to predict winning rates based on real-time score fluctuations.
 
-리그 오브 레전드 경기 기록을 수집하고, 가공하여 승률에 영향을 주는 요인 분석과 실시간 스코어 변동에 따른 승률 예측 프로젝트
+리그 오브 레전드 경기 기록을 수집하고, 가공하여 승률에 영향을 주는 요인 분석과 실시간 스코어 변동에 따른 승률 예측 / 피드백 프로젝트
 
 ![image](https://i.imgur.com/8YdHEAB.jpg)
 
