@@ -4,7 +4,7 @@
 
 A project to collect league-of-legend game records to analyze the factors that affect victory and to predict winning rates based on real-time score fluctuations.
 
-리그 오브 레전드 경기 기록을 수집하고, 가공하여 승률에 영향을 주는 요인 분석과 실시간 스코어 변동에 따른 승률 예측 프로젝트
+리그 오브 레전드 경기 기록을 수집하고, 가공하여 승률에 영향을 주는 요인 분석과 실시간 스코어 변동에 따른 승률 예측 / 피드백 프로젝트
 
 ![image](https://i.imgur.com/8YdHEAB.jpg)
 
@@ -20,9 +20,13 @@ A project to collect league-of-legend game records to analyze the factors that a
 
 ## 프로젝트 구성
 
+모든 프로젝트는 Jupyter notebook으로 진행되어 실행결과가 표시되어 있음
+
+또한 ipynb 파일에 세세한 설명과 정리를 해두었으며 데이터만 준비되면 모든 프로젝트가 실행가능함.
+
 ### 1. DATA ETL(Extract, Transform, Load) 
 
-> 2019.07.02 - 2019.08.23 (2020.03.20)데이터 갱신
+> 2019.07.02 - 2019.08.23
 
 RIOT에서 제공하는 API를 이용해 데이터를 수집하고 가공하고, 파일화하여 저장한다.
 
@@ -32,18 +36,34 @@ RIOT에서 제공하는 API를 이용해 데이터를 수집하고 가공하고,
 
 모은 데이터를 분석에 용이하도록 전처리하고, 승패에 영향이 가는 변수를 분석한다.
 
-### 3. Winner / Loser predict Model Build 
+### 3. Feature Engineering & Model Build
 
 > 2019.08.26 - 2019.09.01
 
-승패 예측을 진행할 모델을 구축하고 튜닝을 통해 예측의 정확도를 올려 신뢰성 있는 모델을 만든다.
+EDA를 통해 얻은 정보로 특성 공학을 진행하고,
 
-### 4.Project Result 
+승패 예측을 진행할 모델을 구축한 뒤 튜닝을 통해 예측의 정확도를 올려 신뢰성 있는 모델을 만든다.
+
+### 4.Project Analytics & Result 
 
 > 2019.09.03 - 2019.11.12( 랭크 게임 종료시까지 )
 
-모델의 feature_importance 를 확인과, 해당 지표가 실제로 승률에 영향을 미치는가 확인.
+회귀 분석과 특성 중요도 시각화로 모델을 분석하고, 해당 지표가 실제로 승률에 영향을 미치는가 확인.
 이후 이 지표를 중심으로 게임을 한다.
+
+## 업데이트 내역
+
+* (2020.03.20)
+  
+  DATA ETL 데이터 업데이트
+
+* (2020.04.10)
+  
+  DATA EDA코드 업데이트
+
+* (2020.04.28)
+
+  Repository 재생성, 정리
 
 ## ALL DATA SET LINK
 
