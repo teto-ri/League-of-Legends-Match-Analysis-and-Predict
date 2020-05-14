@@ -1,6 +1,6 @@
 # League of legend Winner team predict to Using Riot API
 
-> 2019.07.02-2019.11.12 데이터 분석 개인 프로젝트 리메이크
+> 2019.07.02-2019.09.01 데이터 분석 개인 프로젝트 리메이크
 
 A project to collect league-of-legend game records to analyze the factors that affect victory and to predict winning rates based on real-time score fluctuations.
 
