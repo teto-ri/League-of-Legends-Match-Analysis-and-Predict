@@ -32,7 +32,7 @@ A project to collect league-of-legend game records to analyze the factors that a
 
 또한 ipynb 파일에 세세한 설명과 정리를 해두었으며 데이터만 준비되면 모든 프로젝트가 실행가능함.
 
-### 1. DATA ETL(Extract, Transform, Load) 
+### 1. [DATA ETL(Extract, Transform, Load)](https://github.com/tensi3165/League-of-Legends-Match-Predict-Feedback-Project/blob/master/LOL%20Winner%20predict%20Using%20Riot%20API%20-%20DATA%20ETL.ipynb)
 
 > 2019.07.02 - 2019.08.23
 
@@ -42,7 +42,7 @@ RIOT에서 제공하는 API를 이용해 데이터를 수집하고 가공하고,
 
 * 한계 : Riot api 중 timeline api로 각 경기의 시간대별 이벤트 로그를 수집할 수 있었지만, 컴퓨팅 자원의 문제로 수집하지 못했고, 굉장히 전처리가 어려운 구조였다.
 
-### 2. Match Data EDA(Exploratory Data Analysis) 
+### 2. [Match Data EDA(Exploratory Data Analysis)](https://github.com/tensi3165/League-of-Legends-Match-Predict-Feedback-Project/blob/master/LOL-Winner-Predict-Using-Riot-API-DATA-EDA.ipynb)
 
 > 2019.08.24 - 2019.08.25
 
@@ -69,7 +69,7 @@ LogisticRegression, Random Forest, XGBoost, Catboost 모델을 사용하여 정�
 
 * 한계 : 수집한 데이터셋은 경기가 끝나고 난 후의 데이터로 승패 예측에 굉장히 과적합되기 쉬워 그걸 완전히 제어하지 못했고, 약간의 과적합이 발생했다.
 
-### 4.Project Analytics & Result 
+### 4.[Project Analytics & Result](https://github.com/tensi3165/League-of-Legends-Match-Predict-Feedback-Project/blob/master/league-of-legends-user-data-collect-pipeline.ipynb)
 
 > 2019.09.03 - 2019.11.12( 랭크 게임 종료시까지 )
 
