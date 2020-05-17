@@ -69,7 +69,7 @@ LogisticRegression, Random Forest, XGBoost, Catboost 모델을 사용하여 정�
 
 * 한계 : 수집한 데이터셋은 경기가 끝나고 난 후의 데이터로 승패 예측에 굉장히 과적합되기 쉬워 그걸 완전히 제어하지 못했고, 약간의 과적합이 발생했다.
 
-### 4.[Project Analytics & Result](https://github.com/tensi3165/League-of-Legends-Match-Predict-Feedback-Project/blob/master/league-of-legends-user-data-collect-pipeline.ipynb)
+### 4.[Project Analytics & Result](https://github.com/tensi3165/League-of-Legends-Match-Predict-Feedback-Project/blob/master/Collect%20UserData%20Pipeline.ipynb)
 
 > 2019.09.03 - 2019.11.12( 랭크 게임 종료시까지 )
 
