@@ -90,21 +90,13 @@ LogisticRegression, Random Forest, XGBoost, Catboost 모델을 사용하여 정�
   
   DATA ETL 데이터 업데이트
 
-* (2020.04.10)
-  
-  DATA EDA코드 업데이트
-
 * (2020.04.28)
 
   Repository 재생성, 정리
 
-* (2020.05.09)
+* (2020.05.18)
 
-  DATA EDA코드 결과 정리
-  
-* (2020.05.11)
-
-  Match Data Collect to User Name 업데이트
+  Code clean up, Refactoring
   
 ## ALL DATA SET LINK
 
