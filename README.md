@@ -32,7 +32,7 @@ A project to collect league-of-legend game records to analyze the factors that a
 
 또한 ipynb 파일에 세세한 설명과 정리를 해두었으며 데이터만 준비되면 모든 프로젝트가 실행가능함.
 
-### 1. [DATA ETL(Extract, Transform, Load)](https://github.com/tensi3165/League-of-Legends-Match-Predict-Feedback-Project/blob/master/LOL%20Winner%20predict%20Using%20Riot%20API%20-%20DATA%20ETL.ipynb)
+### 1. [DATA ETL(Extract, Transform, Load)](https://github.com/tensi3165/League-of-Legends-Match-Predict-Feedback-Project/blob/master/Match%20Data%20ETL.ipynb)
 
 > 2019.07.02 - 2019.08.23
 
@@ -42,7 +42,7 @@ RIOT에서 제공하는 API를 이용해 데이터를 수집하고 가공하고,
 
 * 한계 : Riot api 중 timeline api로 각 경기의 시간대별 이벤트 로그를 수집할 수 있었지만, 컴퓨팅 자원의 문제로 수집하지 못했고, 굉장히 전처리가 어려운 구조였다.
 
-### 2. [Match Data EDA(Exploratory Data Analysis)](https://github.com/tensi3165/League-of-Legends-Match-Predict-Feedback-Project/blob/master/LOL-Winner-Predict-Using-Riot-API-DATA-EDA.ipynb)
+### 2. [Match Data EDA(Exploratory Data Analysis)](https://github.com/tensi3165/League-of-Legends-Match-Predict-Feedback-Project/blob/master/Data%20EDA.ipynb)
 
 > 2019.08.24 - 2019.08.25
 
@@ -52,7 +52,7 @@ RIOT에서 제공하는 API를 이용해 데이터를 수집하고 가공하고,
 
 * 한계 : 시계열 데이터를 통한 시간대별 분석이었으면 더 흥미로운 통찰 결과가 나왔을 것 같다.
 
-### 3. Feature Engineering & Modeling
+### 3. [Feature Engineering & Modeling](https://github.com/tensi3165/League-of-Legends-Match-Predict-Feedback-Project/blob/master/Analysis%20Modeling.ipynb)
 
 > 2019.08.26 - 2019.09.01
 
@@ -60,12 +60,12 @@ EDA를 통해 얻은 정보로 특성 공학을 진행하고,
 
 승패 예측을 진행할 모델을 구축한 뒤 튜닝을 통해 예측의 정확도를 올려 신뢰성 있는 모델을 만든다.
 
-회귀 분석과 특성 중요도 시각화로 모델을 분석하고, 해당 지표가 실제로 승률에 영향을 미치는가 확인.
+회귀 분석과 특성 중요도 시각화로 모델을 분석하고, 해당 지표가 얼마나 승률에 영향을 미치는가 확인.
 
 * 결과 : 팀의 분당 성장률을 나타내는 지표 생성으로 시간당 특성 가중치가 다름을 표현함, 단순한 총합값이 아닌 비율값으로 변환, 다중공선성 제거, 
 경기 이후 데이터를 경기 진행중일때의 지표로 변환하고 독립변수 간의 상관관계를 제거하는 것이 중요한 포인트였음. 
 
-LogisticRegression, Random Forest, XGBoost, Catboost 모델을 사용하여 정확도 97-98% 에 달하는 모델 완성
+LogisticRegression, Random Forest, XGBoost, Catboost 모델을 사용하여 정확도 97.9-98.0% 에 달하는 모델 완성
 
 * 한계 : 수집한 데이터셋은 경기가 끝나고 난 후의 데이터로 승패 예측에 굉장히 과적합되기 쉬워 그걸 완전히 제어하지 못했고, 약간의 과적합이 발생했다.
 
@@ -73,16 +73,18 @@ LogisticRegression, Random Forest, XGBoost, Catboost 모델을 사용하여 정�
 
 > 2019.09.03 - 2019.11.12( 랭크 게임 종료시까지 )
 
-실제 자신의 전적으로 모델을 테스트하고, 피드백 알고리즘 구성.
+실제 자신의 전적을 불러와 테스트를 진행하고, 피드백 알고리즘 구성.
 프로젝트 마무리와 해당 피드백을 중심으로 게임을 하고 달성한 티어대 기록.
 
 * 결과 : 실시간으로 자신의 롤 닉네임을 이용해 전적을 조회할 수 있도록 하고, 특성 공학에서 찾아냈던 지표로 변환하여 보여준 뒤, 자신이 팀에서 얼마나 기여했는지를 표시, 자신의 최근 전적 1-20개까지 분석할 수 있도록함. 
 
 이 함수를 통해 얻은 데이터는 훈련/테스트 데이터의 형태와 일치하므로,분석 데이터를 훈련셋에 포함하면 실시간 온라인 학습 또한 가능함.
 
-해당 데이터 분석과 피드백을 통해 본인과 친구의 롤 랭크 골드 → 다이아 달성.( 상위 30% → 2%)
+해당 데이터 분석과 피드백을 통해 승률이 11% 높아짐.(승률 43% → 54%) 또한 본인과 친구의 롤 랭크 플레티넘 → 다이아 달성.(상위 10% → 2%)
 
 * 한계 : Riot API는 초당 20개, 분당 50개의 요청 제한이 있는데 이에 따라 분석할 수 있는 경기가 강제로 1개부터 20개까지로 제한되며, 동시에 3명 이상의 분석은 거의 불가능함.(단, 1명당 1개의 분석을 요청할 경우 20명까지 분석할 수 있음.)
+
+추가적으로 편하게 해당 시스템을 이용할 수 있도록 Discord Chat BOT 형태로 개발중.
 
 ## 업데이트 내역
 
@@ -90,21 +92,13 @@ LogisticRegression, Random Forest, XGBoost, Catboost 모델을 사용하여 정�
   
   DATA ETL 데이터 업데이트
 
-* (2020.04.10)
-  
-  DATA EDA코드 업데이트
-
 * (2020.04.28)
 
   Repository 재생성, 정리
 
-* (2020.05.09)
+* (2020.05.18)
 
-  DATA EDA코드 결과 정리
-  
-* (2020.05.11)
-
-  Match Data Collect to User Name 업데이트
+  Code clean up, Refactoring
   
 ## ALL DATA SET LINK
 
