@@ -1,4 +1,5 @@
 # League of legend Winner team predict to Using Riot API
+[![HitCount](http://hits.dwyl.com/tensi3165/League-of-Legends-Match-Predict-Feedback-Project.svg)](http://hits.dwyl.com/tensi3165/League-of-Legends-Match-Predict-Feedback-Project)
 
 > 2019.07.02-2019.09.01 데이터 분석 개인 프로젝트 리메이크
 
