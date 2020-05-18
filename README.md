@@ -1,4 +1,5 @@
 # League of legend Winner team predict to Using Riot API
+[![HitCount](http://hits.dwyl.com/tensi3165/League-of-Legends-Match-Predict-Feedback-Project.svg)](http://hits.dwyl.com/tensi3165/League-of-Legends-Match-Predict-Feedback-Project)
 
 > 2019.07.02-2019.09.01 데이터 분석 개인 프로젝트 리메이크
 
@@ -16,8 +17,6 @@ A project to collect league-of-legend game records to analyze the factors that a
 예를 들어 친구들은 내가 게임의 후반 운영을 할 줄 모른다고 하는데, 정확하게 무엇을 해라 등이 아닌 추상적인 말로 피드백을 한다. 
 
 위의 문제는 나 뿐만이 아니라 게임을 하는 모두가 겪고 자신의 플레이를 객관적으로 분석해주길 바란다. 하지만 프로팀이 아닌 일반인으로서는 객관적인 분석을 받기 어렵다. (프로팀은 코치나, 스태프가 전문적인 분석과 피드백을 지원해준다.)
-
-부산대학교 정보컴퓨터공학부 학술동아리 Untoc에서 개발하는 [E-sport platform](https://github.com/tensi3165/Esports_platform) 은 사람들이 쉽게 리그를 열고 참가할 수 있게끔 대회 관리 뿐만 아니라 전적 관리도 지원하는데, 해당 플랫폼이 아마추어, 일반인 대상이라 전적 관리에서 더 나아가 코치 없이도 전적을 분석하여 피드백을 제공하는 알고리즘의 필요성을 느꼈다.
 
 이를 해결하기 위한 방안으로 자동화 데이터 분석과 머신러닝을 통한 피드백이 있지만, 이를 위해서는 많은 데이터가 필요하다.
 
@@ -69,7 +68,7 @@ LogisticRegression, Random Forest, XGBoost, Catboost 모델을 사용하여 정�
 
 * 한계 : 수집한 데이터셋은 경기가 끝나고 난 후의 데이터로 승패 예측에 굉장히 과적합되기 쉬워 그걸 완전히 제어하지 못했고, 약간의 과적합이 발생했다.
 
-### 4.[Project Analytics & Result](https://github.com/tensi3165/League-of-Legends-Match-Predict-Feedback-Project/blob/master/league-of-legends-user-data-collect-pipeline.ipynb)
+### 4.[Project Analytics & Result](https://github.com/tensi3165/League-of-Legends-Match-Predict-Feedback-Project/blob/master/Collect%20UserData%20Pipeline.ipynb)
 
 > 2019.09.03 - 2019.11.12( 랭크 게임 종료시까지 )
 
