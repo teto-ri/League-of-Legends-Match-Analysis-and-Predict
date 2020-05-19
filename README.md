@@ -31,7 +31,7 @@ A project to collect league-of-legend game records to analyze the factors that a
 
 또한 ipynb 파일에 세세한 설명과 정리를 해두었으며 데이터만 준비되면 모든 프로젝트가 실행가능함.
 
-### 1. [DATA ETL(Extract, Transform, Load)](https://github.com/tensi3165/League-of-Legends-Match-Predict-Feedback-Project/blob/master/Match%20Data%20ETL.ipynb)
+### 1. [DATA ETL(Extract, Transform, Load)](https://github.com/tensi3165/League-of-Legends-Match-Analysis-and-Predict/blob/master/1.Match%20Data%20ETL.ipynb)
 
 > 2019.07.02 - 2019.08.23
 
@@ -41,7 +41,7 @@ RIOT에서 제공하는 API를 이용해 데이터를 수집하고 가공하고,
 
 * 한계 : Riot api 중 timeline api로 각 경기의 시간대별 이벤트 로그를 수집할 수 있었지만, 컴퓨팅 자원의 문제로 수집하지 못했고, 굉장히 전처리가 어려운 구조였다.
 
-### 2. [Match Data EDA(Exploratory Data Analysis)](https://github.com/tensi3165/League-of-Legends-Match-Predict-Feedback-Project/blob/master/Data%20EDA.ipynb)
+### 2. [Match Data EDA(Exploratory Data Analysis)](https://github.com/tensi3165/League-of-Legends-Match-Analysis-and-Predict/blob/master/2.Data%20EDA.ipynb)
 
 > 2019.08.24 - 2019.08.25
 
@@ -51,7 +51,7 @@ RIOT에서 제공하는 API를 이용해 데이터를 수집하고 가공하고,
 
 * 한계 : 시계열 데이터를 통한 시간대별 분석이었으면 더 흥미로운 통찰 결과가 나왔을 것 같다.
 
-### 3. [Feature Engineering & Modeling](https://github.com/tensi3165/League-of-Legends-Match-Predict-Feedback-Project/blob/master/Analysis%20Modeling.ipynb)
+### 3. [Feature Engineering & Modeling](https://github.com/tensi3165/League-of-Legends-Match-Analysis-and-Predict/blob/master/3.Analysis%20Modeling.ipynb)
 
 > 2019.08.26 - 2019.09.01
 
@@ -68,7 +68,7 @@ LogisticRegression, Random Forest, XGBoost, Catboost 모델을 사용하여 정�
 
 * 한계 : 수집한 데이터셋은 경기가 끝나고 난 후의 데이터로 승패 예측에 굉장히 과적합되기 쉬워 그걸 완전히 제어하지 못했고, 약간의 과적합이 발생했다.
 
-### 4.[Project Analytics & Result](https://github.com/tensi3165/League-of-Legends-Match-Predict-Feedback-Project/blob/master/Collect%20UserData%20Pipeline.ipynb)
+### 4.[Project Analytics & Result](https://github.com/tensi3165/League-of-Legends-Match-Analysis-and-Predict/blob/master/4.Collect%20UserData%20Pipeline.ipynb)
 
 > 2019.09.03 - 2019.11.12( 랭크 게임 종료시까지 )
 
@@ -83,7 +83,7 @@ LogisticRegression, Random Forest, XGBoost, Catboost 모델을 사용하여 정�
 
 * 한계 : Riot API는 초당 20개, 분당 50개의 요청 제한이 있는데 이에 따라 분석할 수 있는 경기가 강제로 1개부터 20개까지로 제한되며, 동시에 3명 이상의 분석은 거의 불가능함.(단, 1명당 1개의 분석을 요청할 경우 20명까지 분석할 수 있음.)
 
-추가적으로 편하게 해당 시스템을 이용할 수 있도록 Discord Chat BOT 형태로 개발중.
+추가적으로 편하게 해당 시스템을 이용할 수 있도록 Kakao Chat BOT 형태로 개발중.
 
 ## 업데이트 내역
 
